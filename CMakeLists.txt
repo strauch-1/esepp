@@ -15,6 +15,7 @@ input_output.pdf
 interference.h
 lepton.h
 proton.h
+run_esepp.pl
 )
 
 configure_file(vpol.dat vpol.dat COPYONLY)

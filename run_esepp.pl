@@ -25,7 +25,7 @@ foreach
                     my $pid(@pid)
                     {
                         my $m = 0.511;
-                        if ($pid == 4) {
+                        if ($pid >= 4 || $pid <= 6) {
                             $m = 105.65837;
                         };
                         my $dtheta = 2;
