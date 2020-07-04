@@ -8,13 +8,11 @@ my @theta = (20, 40, 60, 80, 100);
 my @pid = (3, 6);  # 3 = both e- and e+, 6 = both, mu- and mu+
 
 my $million = 1000000;
-my $N = 10 * $million;
+my $N = 20 * $million;
 
 my ($argv_mom) = @ARGV;
 if (defined $argv_mom) {
     @mom = ($argv_mom);
-    print $argv_mom;
-    exit;
 }
 
 foreach
@@ -57,7 +55,7 @@ foreach
                         $arg = $arg.$N."\n";
                         $arg = $arg."2"."\n";  # 2 = *.root files
 
-                        $arg = $arg.sprintf("%03d_%03d\n", $mom, $theta);  # prefix for the output files
+                        $arg = $arg.sprintf("esepp_%03dMeV_%03deg\n", $mom, $theta);  # prefix for the output files
                         print $arg."\n";
 
                         my $cmd = "printf \"$arg\" | $code";
