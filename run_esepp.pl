@@ -10,9 +10,12 @@ my @pid = (3, 6);  # 3 = both e- and e+, 6 = both, mu- and mu+
 my $million = 1000000;
 my $N = 20 * $million;
 
-my ($argv_mom) = @ARGV;
+my ($argv_mom, $argv_pid) = @ARGV;
 if (defined $argv_mom) {
     @mom = ($argv_mom);
+}
+if (defined $argv_pid) {
+    @pid = ($argv_pid);
 }
 
 foreach

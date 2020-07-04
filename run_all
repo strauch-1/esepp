@@ -1,0 +1,15 @@
+#!/bin/sh
+
+nohub ./run_esepp.pl 115 3 > log115_3 &
+nohub ./run_esepp.pl 115 6 > log115_6 &
+nohub ./run_esepp.pl 116 3 > log116_3 &
+nohub ./run_esepp.pl 116 6 > log116_6 &
+nohub ./run_esepp.pl 161 3 > log161_3 &
+nohub ./run_esepp.pl 161 6 > log161_6 &
+nohub ./run_esepp.pl 162 3 > log162_3 &
+nohub ./run_esepp.pl 162 6 > log162_6 &
+nohub ./run_esepp.pl 210 3 > log210_3 &
+nohub ./run_esepp.pl 210 6 > log210_6 &
+nohub ./run_esepp.pl 211 3 > log211_3 &
+nohub ./run_esepp.pl 211 6 > log211_6 &
+
